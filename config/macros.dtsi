@@ -1,3 +1,15 @@
+macro_launch_mac: macro_launch_mac{
+compatible = "zmk,behavior-macro";
+label = "macro_launch_mac";
+#binding-cells = <0>;
+bindings = <&kp LEFT_ALT>, <&kp LEFT_SHIFT>;
+};
+macro_launch_win: macro_launch_win{
+compatible = "zmk,behavior-macro";
+label = "macro_launch_win";
+#binding-cells = <0>;
+bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>;
+};
 macro_cubes: macro_cubes{
 compatible = "zmk,behavior-macro";
 label = "macro_cubes";
