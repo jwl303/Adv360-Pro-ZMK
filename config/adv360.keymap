@@ -34,13 +34,13 @@
         compatible = "zmk,combos";
 
         hotkey_windows {
-            bindings = <&mo 10>;
-            key-positions = <46 37>;
+            bindings = <&mo 12>;
+            key-positions = <60>;
         };
 
         hotkey_mac {
-            bindings = <&mo 10>;
-            key-positions = <46 38>;
+            bindings = <&mo 12>;
+            key-positions = <60>;
             layers = <0>;
         };
     };
@@ -52,6 +52,150 @@
             bindings = <&kp LS(C) &kp U &kp B &kp E &kp S &kp N6 &kp N3 &kp N2 &kp LS(C) &kp A &kp K &kp E &kp S &kp EXCL>;
             label = "CUBES";
         };
+        hotkey_mac_a: hotkey_mac_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(A))>;
+            label = "HOTKEY_MAC_A";
+        };
+        hotkey_mac_c: hotkey_mac_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(C))>;
+            label = "HOTKEY_MAC_C";
+        };
+        hotkey_mac_s: hotkey_mac_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(S))>;
+            label = "HOTKEY_MAC_S";
+        };
+        hotkey_mac_f: hotkey_mac_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(F))>;
+            label = "HOTKEY_MAC_F";
+        };
+        hotkey_mac_w: hotkey_mac_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(W))>;
+            label = "HOTKEY_MAC_W";
+        };
+        hotkey_mac_q: hotkey_mac_q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(Q))>;
+            label = "HOTKEY_MAC_Q";
+        };
+        hotkey_mac_r: hotkey_mac_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(R))>;
+            label = "HOTKEY_MAC_R";
+        };
+        hotkey_mac_v: hotkey_mac_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(V))>;
+            label = "HOTKEY_MAC_V";
+        };
+        hotkey_mac_t: hotkey_mac_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(T))>;
+            label = "HOTKEY_MAC_T";
+        };
+        hotkey_mac_d: hotkey_mac_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(D))>;
+            label = "HOTKEY_MAC_D";
+        };
+        hotkey_win_a: hotkey_win_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(A))>;
+            label = "HOTKEY_WIN_A";
+        };
+        hotkey_mac_z: hotkey_mac_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(Z))>;
+            label = "HOTKEY_MAC_Z";
+        };
+        hotkey_mac_x: hotkey_mac_x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(X))>;
+            label = "HOTKEY_MAC_X";
+        };
+        hotkey_win_f: hotkey_win_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(F))>;
+            label = "HOTKEY_WIN_F";
+        };
+        hotkey_win_r: hotkey_win_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(R))>;
+            label = "HOTKEY_WIN_R";
+        };
+        hotkey_win_s: hotkey_win_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(S))>;
+            label = "HOTKEY_WIN_S";
+        };
+        hotkey_win_t: hotkey_win_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(T))>;
+            label = "HOTKEY_WIN_T";
+        };
+        hotkey_win_d: hotkey_win_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(D))>;
+            label = "HOTKEY_WIN_D";
+        };
+        hotkey_win_z: hotkey_win_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(Z))>;
+            label = "HOTKEY_WIN_Z";
+        };
+        hotkey_win_x: hotkey_win_x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(X))>;
+            label = "HOTKEY_WIN_X";
+        };
+        hotkey_win_c: hotkey_win_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(C))>;
+            label = "HOTKEY_WIN_C";
+        };
+        hotkey_win_v: hotkey_win_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(V))>;
+            label = "HOTKEY_WIN_V";
+        };
+        hotkey_win_b: hotkey_win_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(B))>;
+            label = "HOTKEY_WIN_B";
+        };
+        hotkey_win_w: hotkey_win_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(W))>;
+            label = "HOTKEY_WIN_W";
+        };
     };
 
     keymap {
@@ -60,8 +204,8 @@
         default_layer {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 8                                                    &mo 10         &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W      &kp E     &kp R      &kp T   &to 0                                                     &to 11         &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S      &kp D     &kp F      &kp G   &to 1      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 12         &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp TAB    &kp Q      &kp W      &kp E     &kp R      &kp T   &to 0                                                     &to 12         &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S      &kp D     &kp F      &kp G   &to 1      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 13         &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X      &kp C     &kp V      &kp B                         &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &mo 10     &kp ENTER  &kp GRAVE  &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 9
             >;
@@ -73,7 +217,7 @@
 &trans  &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
+&to 10  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
             >;
         };
 
@@ -149,7 +293,7 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 8                                      &mo 10  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 8                                      &mo 12  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &cubes  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
@@ -157,13 +301,23 @@
             >;
         };
 
-        layer_mod {
+        layer_mod_win {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                   &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                             &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &tog 7  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none                              &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &tog 7  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none                                                   &trans                  &none  &none       &none       &none  &none  &none
+&none  &none          &hotkey_win_w  &hotkey_win_f  &none          &none          &bootloader                                             &bootloader             &none  &none       &none       &none  &none  &none
+&none  &hotkey_win_a  &hotkey_win_r  &hotkey_win_s  &hotkey_win_t  &hotkey_win_d  &none        &tog 7  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &hotkey_win_z  &hotkey_win_x  &hotkey_win_c  &hotkey_win_v  &hotkey_win_b                       &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none          &none          &none          &none                         &none        &tog 7  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_mod_mac {
+            bindings = <
+&trans  &trans         &trans         &trans         &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -179,11 +333,11 @@
 
         layer_Colemak_Mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans         &trans
-&trans  &trans  &trans  &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U   &kp Y   &kp SEMICOLON  &trans
-&trans  &trans  &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &trans  &kp N   &kp E   &kp I   &kp O          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                &trans                                    &kp K   &trans  &trans  &trans  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans  &trans  &trans         &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans   &trans  &trans  &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U   &kp Y   &kp SEMICOLON  &trans
+&trans   &trans  &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &trans  &kp N   &kp E   &kp I   &kp O          &trans
+&trans   &trans  &trans  &trans  &trans  &trans                    &trans                &trans                                    &kp K   &trans  &trans  &trans  &trans         &trans
+&tog 11  &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans  &trans  &trans         &trans
             >;
         };
     };
