@@ -333,11 +333,11 @@
 
         layer_Colemak_Mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans         &trans
-&trans  &trans  &trans  &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U   &kp Y   &kp SEMICOLON  &trans
-&trans  &trans  &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &trans  &kp N   &kp E   &kp I   &kp O          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                &trans                                    &kp K   &trans  &trans  &trans  &trans         &trans
-&mo 11  &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans  &trans  &trans         &trans
+&trans         &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans         &trans  &trans  &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U   &kp Y   &kp SEMICOLON  &trans
+&trans         &trans  &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &trans  &kp N   &kp E   &kp I   &kp O          &trans
+&trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans                                    &kp K   &trans  &trans  &trans  &trans         &trans
+&hotkey_mac_c  &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans  &trans  &trans         &trans
             >;
         };
     };
