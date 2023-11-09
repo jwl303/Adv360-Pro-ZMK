@@ -202,11 +202,11 @@
 
         layer_colemak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans     &trans      &trans         &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-&mo 2   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
+&mo 2      &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
             >;
         };
 
@@ -232,11 +232,11 @@
 
         layer_Colemak_Mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans     &trans   &trans         &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &kp H   &kp N   &kp E      &kp I    &kp O          &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                     &trans                &trans                                    &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH       &trans
-&mo 5   &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans     &trans   &trans         &trans
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                                                    &trans  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &kp H   &kp N   &kp E      &kp I    &kp O          &kp APOS
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                     &trans                &trans                                    &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+&mo 5      &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans     &trans   &trans         &trans
             >;
         };
 
