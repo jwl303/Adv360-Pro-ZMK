@@ -185,6 +185,12 @@
             bindings = <&kp LS(LG(W))>;
             label = "HOTKEY_WIN_W";
         };
+        hotkey_mac_equal: hotkey_mac_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(EQUAL))>;
+            label = "HOTKEY_MAC_EQUAL";
+        };
     };
 
     keymap {
@@ -232,11 +238,11 @@
 
         layer_mod_mac {
             bindings = <
-&trans  &trans         &trans         &trans         &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&hotkey_mac_equal  &trans         &trans         &trans         &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
