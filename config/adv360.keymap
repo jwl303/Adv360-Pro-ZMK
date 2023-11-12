@@ -191,6 +191,18 @@
             bindings = <&kp LS(LA(EQUAL))>;
             label = "HOTKEY_MAC_EQUAL";
         };
+        hotkey_mac_2: hotkey_mac_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(NUMBER_2))>;
+            label = "HOTKEY_MAC_2";
+        };
+        shift_enter: shift_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(ENTER)>;
+            label = "SHIFT_ENTER";
+        };
     };
 
     keymap {
@@ -198,51 +210,41 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 5                                                    &mo 8          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W      &kp E     &kp R      &kp T   &to 0                                                     &to 2          &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S      &kp D     &kp F      &kp G   &to 1      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 3          &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C     &kp V      &kp B                         &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 7      &kp ENTER  &kp GRAVE  &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 6
+&kp EQUAL  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 4                                                       &mo 6          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W      &kp E     &kp R      &kp T   &to 0                                                        &to 2          &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S      &kp D     &kp F      &kp G   &shift_enter  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 3          &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C     &kp V      &kp B                            &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 7      &kp ENTER  &kp GRAVE  &kp LEFT  &kp RIGHT          &kp SPACE     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
             >;
         };
 
         layer_colemak {
             bindings = <
-&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
-&mo 7      &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                            &trans  &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                            &trans  &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp D   &shift_enter  &trans  &trans      &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                         &trans      &trans                  &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
+&mo 7      &trans  &trans  &trans  &trans          &trans        &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
             >;
         };
 
         layer_Qwerty_Mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&mo 4   &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &shift_enter  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans                &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 8   &trans  &trans  &trans  &trans          &trans        &trans    &trans                &trans             &trans         &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_Colemak_Mac {
             bindings = <
-&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                                                    &trans  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                                                    &trans  &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp D   &trans  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &kp H   &kp N   &kp E      &kp I    &kp O          &kp APOS
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                     &trans                &trans                                    &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-&mo 4      &trans  &trans  &trans  &trans          &trans  &trans    &trans                &trans             &trans         &trans          &trans  &trans     &trans   &trans         &trans
-            >;
-        };
-
-        layer_mod_mac {
-            bindings = <
-&hotkey_mac_equal  &trans         &trans         &trans         &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans             &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans             &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans             &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans             &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                                                          &trans  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp G   &trans                                                                          &trans  &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp D   &shift_enter  &kp LGUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans  &kp H   &kp N   &kp E      &kp I    &kp O          &kp APOS
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                           &trans                &trans                                    &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+&mo 8      &trans  &trans  &trans  &trans          &trans        &trans    &trans                &trans             &trans         &trans          &trans  &trans     &trans   &trans         &trans
             >;
         };
 
@@ -259,30 +261,40 @@
         layer_fn {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                      &mo 2   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &cubes  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &cubes                                      &trans  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
-        layer_mod_win {
+        layer_mod_keybd {
             bindings = <
-&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none                                                   &trans                  &none  &none       &none       &none  &none  &none
-&none  &none          &hotkey_win_w  &hotkey_win_f  &none          &none          &bootloader                                             &bootloader             &none  &none       &none       &none  &none  &none
-&none  &hotkey_win_a  &hotkey_win_r  &hotkey_win_s  &hotkey_win_t  &hotkey_win_d  &none        &tog 0  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &hotkey_win_z  &hotkey_win_x  &hotkey_win_c  &hotkey_win_v  &hotkey_win_b                       &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none          &none          &none          &none                         &none        &tog 0  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                             &trans           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &to 0                                             &to 2            &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &to 1  &tog 0  &none      &bt BT_CLR  &none       &to 3            &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none                        &none      &none                                    &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none  &tog 0  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
 
-        Fn {
+        layer_mod_win {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                              &trans           &trans  &trans      &trans      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans                                              &trans           &trans  &trans      &trans      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &bt BT_CLR  &trans      &rgb_ug RGB_SPI  &trans  &trans      &trans      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                                   &trans  &trans      &trans      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC  &trans  &trans  &trans
+&trans  &trans         &trans         &trans         &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &hotkey_win_w  &hotkey_win_f  &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hotkey_win_a  &hotkey_win_r  &hotkey_win_s  &hotkey_win_t  &hotkey_win_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hotkey_win_z  &hotkey_win_x  &hotkey_win_c  &hotkey_win_v  &hotkey_win_b                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_mod_mac {
+            bindings = <
+&hotkey_mac_equal  &hotkey_mac_2  &trans         &trans         &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
