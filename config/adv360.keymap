@@ -41,179 +41,215 @@
             bindings = <&kp LS(C) &kp U &kp B &kp E &kp S &kp N6 &kp N3 &kp N2 &kp LS(C) &kp A &kp K &kp E &kp S &kp EXCL>;
             label = "CUBES";
         };
+
         hotkey_mac_a: hotkey_mac_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(A))>;
             label = "HOTKEY_MAC_A";
         };
+
         hotkey_mac_c: hotkey_mac_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(C))>;
             label = "HOTKEY_MAC_C";
         };
+
         hotkey_mac_s: hotkey_mac_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(S))>;
             label = "HOTKEY_MAC_S";
         };
+
         hotkey_mac_f: hotkey_mac_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(F))>;
             label = "HOTKEY_MAC_F";
         };
+
         hotkey_mac_w: hotkey_mac_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(W))>;
             label = "HOTKEY_MAC_W";
         };
+
         hotkey_mac_q: hotkey_mac_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(Q))>;
             label = "HOTKEY_MAC_Q";
         };
+
         hotkey_mac_r: hotkey_mac_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(R))>;
             label = "HOTKEY_MAC_R";
         };
+
         hotkey_mac_v: hotkey_mac_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(V))>;
             label = "HOTKEY_MAC_V";
         };
+
         hotkey_mac_t: hotkey_mac_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(T))>;
             label = "HOTKEY_MAC_T";
         };
+
         hotkey_mac_d: hotkey_mac_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(D))>;
             label = "HOTKEY_MAC_D";
         };
+
         hotkey_win_a: hotkey_win_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(A))>;
             label = "HOTKEY_WIN_A";
         };
+
         hotkey_mac_z: hotkey_mac_z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(Z))>;
             label = "HOTKEY_MAC_Z";
         };
+
         hotkey_mac_x: hotkey_mac_x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(X))>;
             label = "HOTKEY_MAC_X";
         };
+
         hotkey_win_f: hotkey_win_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(F))>;
             label = "HOTKEY_WIN_F";
         };
+
         hotkey_win_r: hotkey_win_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(R))>;
             label = "HOTKEY_WIN_R";
         };
+
         hotkey_win_s: hotkey_win_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(S))>;
             label = "HOTKEY_WIN_S";
         };
+
         hotkey_win_t: hotkey_win_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(T))>;
             label = "HOTKEY_WIN_T";
         };
+
         hotkey_win_d: hotkey_win_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(D))>;
             label = "HOTKEY_WIN_D";
         };
+
         hotkey_win_z: hotkey_win_z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(Z))>;
             label = "HOTKEY_WIN_Z";
         };
+
         hotkey_win_x: hotkey_win_x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(X))>;
             label = "HOTKEY_WIN_X";
         };
+
         hotkey_win_c: hotkey_win_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(C))>;
             label = "HOTKEY_WIN_C";
         };
+
         hotkey_win_v: hotkey_win_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(V))>;
             label = "HOTKEY_WIN_V";
         };
+
         hotkey_win_b: hotkey_win_b {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(B))>;
             label = "HOTKEY_WIN_B";
         };
+
         hotkey_win_w: hotkey_win_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(W))>;
             label = "HOTKEY_WIN_W";
         };
+
         hotkey_mac_equal: hotkey_mac_equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(EQUAL))>;
             label = "HOTKEY_MAC_EQUAL";
         };
+
         hotkey_mac_2: hotkey_mac_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(NUMBER_2))>;
             label = "HOTKEY_MAC_2";
         };
+
         shift_enter: shift_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(ENTER)>;
             label = "SHIFT_ENTER";
         };
+
         hotkey_mac_m: hotkey_mac_m {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(M))>;
             label = "HOTKEY_MAC_M";
         };
+
         hotkey_mac_comma: hotkey_mac_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(COMMA))>;
             label = "HOTKEY_MAC_COMMA";
+        };
+
+        hotkey_mac_k: hotkey_mac_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(K))>;
+            label = "HOTKEY_MAC_K";
         };
     };
 
@@ -302,11 +338,11 @@
 
         layer_mod_mac {
             bindings = <
-&hotkey_mac_equal  &hotkey_mac_2  &hotkey_mac_2  &trans         &trans         &trans         &trans                                      &trans  &trans  &trans         &trans             &trans  &trans  &trans
-&trans             &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans  &trans         &trans             &trans  &trans  &trans
-&trans             &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans         &trans             &trans  &trans  &trans
-&trans             &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &trans  &hotkey_mac_m  &hotkey_mac_comma  &trans  &trans  &trans
-&trans             &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans             &trans  &trans  &trans
+&hotkey_mac_equal  &hotkey_mac_2  &hotkey_mac_2  &trans         &trans         &trans         &trans                                      &trans  &trans         &trans         &trans             &trans  &trans  &trans
+&trans             &hotkey_mac_q  &hotkey_mac_w  &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans         &trans         &trans             &trans  &trans  &trans
+&trans             &hotkey_mac_a  &trans         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans         &trans             &trans  &trans  &trans
+&trans             &hotkey_mac_z  &hotkey_mac_x  &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &hotkey_mac_k  &hotkey_mac_m  &hotkey_mac_comma  &trans  &trans  &trans
+&trans             &trans         &trans         &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans                 &trans         &trans             &trans  &trans  &trans
             >;
         };
     };
