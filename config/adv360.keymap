@@ -359,7 +359,7 @@
             bindings = <
 &hotkey_mac_equal  &hotkey_mac_2  &hotkey_mac_2         &trans         &trans         &trans         &trans                                      &trans  &trans         &trans         &trans             &trans  &trans  &trans
 &trans             &hotkey_mac_q  &hotkey_mac_w         &hotkey_mac_f  &trans         &trans         &trans                                      &trans  &trans         &trans         &trans             &trans  &trans  &trans
-&trans             &hotkey_mac_a  &trans                &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans         &trans             &trans  &trans  &trans
+&trans             &hotkey_mac_a  &hotkey_mac_r         &hotkey_mac_s  &hotkey_mac_t  &hotkey_mac_d  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans         &trans             &trans  &trans  &trans
 &trans             &hotkey_mac_z  &hotkey_mac_x         &hotkey_mac_c  &hotkey_mac_v  &trans                         &trans      &trans                  &hotkey_mac_k  &hotkey_mac_m  &hotkey_mac_comma  &trans  &trans  &trans
 &trans             &trans         &hotkey_mac_terminal  &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans                 &trans         &trans             &trans  &trans  &trans
             >;
