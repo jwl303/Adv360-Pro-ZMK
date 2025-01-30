@@ -20,7 +20,7 @@ jobs:
             zephyr/
             bootloader/
             zmk/
-          key: ${{ runner.os }}-modules-${{ hashFiles('manifest-dir/west.yml') }}
+          key: ${{ runner.os }}-modules-${{ hashFiles('config/west.yml') }}
           restore-keys: |
             ${{ runner.os }}-modules-
       - name: West Init
@@ -29,11 +29,21 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build
-        run: west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Upload Firmware artifact
+      - name: Build (Advantage360 Left)
+        run: west build -s zmk/app -b advantange360_left -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Advantage360 Left Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: firmware
+          name: firmware-left
+          path: build/zephyr/*.uf2
+          retention-days: 7
+      - name: Clear Build Directory
+        run: rm -rf build
+      - name: Build (Advantage360 Right)
+        run: west build -s zmk/app -b advantange360_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Advantage360 Right Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware-right
           path: build/zephyr/*.uf2
           retention-days: 7
