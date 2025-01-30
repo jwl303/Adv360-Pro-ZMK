@@ -7,7 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: zmkfirmware/zmk-build-arm:stable
-    name: Build
+    strategy:
+      matrix:
+        board: [adv360_left, adv360_right]
+    name: Build (${{ matrix.board }})
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,21 +32,11 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: Build (Advantage360 Left)
-        run: west build -s zmk/app -b kinesis_advantage360_left -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Advantage360 Left Artifact
+      - name: West Build (${{ matrix.board }})
+        run: west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Upload Firmware (${{ matrix.board }})
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-left
-          path: build/zephyr/*.uf2
-          retention-days: 7
-      - name: Clear Build Directory
-        run: rm -rf build
-      - name: Build (Advantage360 Right)
-        run: west build -s zmk/app -b kinesis_advantage360_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Advantage360 Right Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: firmware-right
+          name: firmware-${{ matrix.board }}
           path: build/zephyr/*.uf2
           retention-days: 7
